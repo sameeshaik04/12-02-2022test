@@ -1,0 +1,19 @@
+#program to compare two numbers are
+#equal
+#not equal
+# one number is greater than another one
+# one number is smaler than another one
+
+n1=int(input("Enter the first number :"))
+n2=int(input("Enter the second number :"))
+
+if n1==n2:
+    print("The given TWO nmbers are equal ")
+else :
+    print("The given TWO numbers are not equal ")
+    if n1>n2:
+        print(" The ",n1," is Greater than ", n2 )
+        print("The ",n2,"is Smaller than ",n1)
+    elif n1<n2:
+        print(" The ",n1," is Smaller than ", n2)
+        print(" The ",n2," is Greater than ", n1)
