@@ -1,0 +1,50 @@
+# program to prepare super market bill
+
+print("WELCOME TO  SUPER MARKET  ")
+cname=input("Enter the customer name : ")
+cphno=int(input("Enter the customer phone number :"))
+print('--- START THE SHOPPING --- ')
+print("Select what you want :")
+
+chkl=40
+icecr=50
+bispk=30
+ric=30
+att=65
+ol=120
+sap=20
+hony=50
+masa=35
+sugar=25
+sne=20
+chk=int(input("Enter how many chocklates you want :"))
+icec=int(input("Enter how many ice creams you want :"))
+bisp=int(input("Enter how many biscket packets you want :"))
+rice=int(input("Enter how many kgs of rice you want :"))
+atta=int(input("Enter how many kgs of atta you want : "))
+oil=int(input("Enter how many kgs of oil you want : "))
+soap=int(input("Enter how many soaps you want :"))
+honey=int(input("Enter how many honey bottles you want :"))
+mas=int(input("Enter how many masala packets you want :"))
+sug=int(input("Enter how many kgs of sugar you want :"))
+sn=int(input("Enter how many shaving needs you want : "))
+discount=0
+bill=(chkl*chk)+(icecr*icec)+(bispk*bisp)+(ric*rice)+(att*atta)+(ol*oil)+(sap*soap)+(hony*honey)+(masa*mas)+(sugar*sug)+(sne*sn)
+if bill>=5000:
+    discount=bill*10/100
+    tax=bill*10/100
+elif bill>=3000:
+    discount=bill*8/100
+    tax=bill*10/100
+elif bill>=2000:
+    discount=bill*5/100
+    tax=bill*18/100
+elif bill>=1000:
+    dsicount=bill*3/100
+    tax=bill*18/100
+elif bill<3000:
+    tax=bill*18/100
+mainbill=bill - discount+tax
+print("your bill amount ",mainbill)
+print("Thank you for visiting ourshopping ")
+
